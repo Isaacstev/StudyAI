@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyAI Dashboard</title>
+    <link rel="stylesheet" href="upload.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="StudyAI Logo">
+            <span>StudyAI</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Documents</a></li>
+            <li><a href="#">Flashcards</a></li>
+            <li><a href="#">Quizzes</a></li>
+        </ul>
+        <div class="profile">
+            <i class="fas fa-bell"></i>
+            <img src="profile.png" alt="User Profile">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="upload-box">
+            <h2>Upload Your Documents</h2>
+            <p>Upload PDF, DOCX, or TXT files to get started</p>
+            <div class="upload-area">
+                <i class="fas fa-file-upload"></i>
+                <p><a href="#">Choose a file</a> or drag and drop here</p>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>AI Summary</h3>
+                <p>Get instant AI-powered summaries of your documents</p>
+                <button>Generate Summary</button>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>Quiz Generator</h3>
+                <p>Create custom quizzes from your documents</p>
+                <button>Create Quiz</button>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-sticky-note"></i>
+                <h3>Flashcards</h3>
+                <p>Generate study flashcards automatically</p>
+                <button>Create Flashcards</button>
+            </div>
+        </div>
+
+        <div class="recent-documents">
+            <h2>Recent Documents</h2>
+            <div class="document">
+                <i class="fas fa-file-pdf pdf-icon"></i>
+                <div>
+                    <p>Chapter 1 - Introduction.pdf</p>
+                    <span>Uploaded 2 hours ago</span>
+                </div>
+                <div class="actions">
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-download"></i>
+                    <i class="fas fa-trash"></i>
+                </div>
+            </div>
+            <div class="document">
+                <i class="fas fa-file-word word-icon"></i>
+                <div>
+                    <p>Study Notes.docx</p>
+                    <span>Uploaded yesterday</span>
+                </div>
+                <div class="actions">
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-download"></i>
+                    <i class="fas fa-trash"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 StudyAI. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Support</a>
+        </div>
+    </footer>
+</body>
+</html>
