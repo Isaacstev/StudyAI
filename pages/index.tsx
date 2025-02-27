@@ -1,6 +1,7 @@
-// pages/index.tsx
 import Head from 'next/head';
-import '../styles/styles.css'; // Global styles import
+import Link from 'next/link';  // Import Link from next/link
+import Image from 'next/image'; // Import Image from next/image
+import '../styles/styles.css';
 
 export default function Home() {
   return (
@@ -11,31 +12,33 @@ export default function Home() {
 
       {/* Navbar */}
       <nav className="navbar">
-        <div className="logo">StudyAI</div>
+        <div className="logo">
+          <Image src="/logo.png" alt="StudyAI Logo" width={90} height={40} />  {/* Using next/image */}
+          <span>StudyAI</span>
+        </div>
         <ul className="nav-links">
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">About</a></li>
+          <li><Link href="/dashboard">Dashboard</Link></li> {/* No <a> inside <Link> */}
+          <li><a href="#">Documents</a></li>
+          <li><a href="#">FlashCards</a></li>
+          <li><a href="#">Quizzes</a></li>
         </ul>
-      <div className="auth-buttons">
-        <a href="/login" className="sign-in">Sign In</a>
-        <a href="/signup" className="get-started">Get Started</a>
-      </div>
-
+        <div className="auth-buttons">
+          <Link href="/login" className="sign-in">Sign In</Link>  {/* No <a> inside <Link> */}
+          <Link href="/signup" className="get-started">Get Started</Link>  {/* No <a> inside <Link> */}
+        </div>
       </nav>
 
       {/* Hero Section */}
       <header className="hero">
         <div className="hero-text">
           <h1>AI-Powered Study Assistant with Voice Dictation</h1>
-          <p>Transform your learning experience with our intelligent study tools. Summarize, quiz, collaborate, and learn more effectively.</p>
+          <p>Transform your learning experience with our intelligent study tools.</p>
           <div className="hero-buttons">
-            <a href="#" className="btn primary">Try for Free</a>
+            <Link href="#" className="btn primary">Try for Free</Link>  {/* No <a> inside <Link> */}
           </div>
         </div>
         <div className="hero-image">
-          <img src="/dashboard.png" alt="Study AI Dashboard" />
+          <Image src="/dashboard.png" alt="Study AI Dashboard" width={600} height={400} /> {/* Using next/image */}
         </div>
       </header>
 
@@ -81,7 +84,7 @@ export default function Home() {
       <section className="cta">
         <h2>Start Learning Smarter Today</h2>
         <p>Join thousands of students who are already transforming their study experience.</p>
-        <a href="#" className="btn primary">Get Started for Free</a>
+        <Link href="#" className="btn primary">Get Started for Free</Link>  {/* No <a> inside <Link> */}
       </section>
 
       {/* Footer */}
