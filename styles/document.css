@@ -1,0 +1,44 @@
+/* documents.css */
+.container {
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .document-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .document-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .document-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .document-actions a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .document-actions a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+  }
+  

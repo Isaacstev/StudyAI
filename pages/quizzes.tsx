@@ -1,7 +1,7 @@
 // pages/quizzes.tsx
 import Head from 'next/head';
 import Link from 'next/link'; // Import Link from next/link
-import '../styles/styles.css'; // Import the relevant CSS
+import '../styles/quizzes.css'; // Import the relevant CSS
 
 export default function Quizzes() {
   return (

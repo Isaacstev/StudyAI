@@ -18,9 +18,9 @@ export default function Home() {
         </div>
         <ul className="nav-links">
           <li><Link href="/dashboard">Dashboard</Link></li> {/* No <a> inside <Link> */}
-          <li><a href="#">Documents</a></li>
-          <li><a href="#">FlashCards</a></li>
-          <li><a href="#">Quizzes</a></li>
+          <li><Link href="/documents">Documents</Link></li>
+          <li><Link href="/flashcards">FlashCards</Link></li>
+          <li><Link href="quizzes">Quizzes</Link></li>
         </ul>
         <div className="auth-buttons">
           <Link href="/login" className="sign-in">Sign In</Link>  {/* No <a> inside <Link> */}

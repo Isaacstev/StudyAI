@@ -19,9 +19,9 @@ export default function Dashboard() {
         </div>
         <ul className="nav-links">
           <li><Link href="/dashboard">Dashboard</Link></li> {/* Remove <a> */}
-          <li><a href="#">Documents</a></li>
-          <li><a href="#">Flashcards</a></li>
-          <li><a href="#">Quizzes</a></li>
+          <li><Link href="/documents">Documents</Link></li>
+          <li><Link href="/flascards">Flashcards</Link></li>
+          <li><Link href="/quizzes">Quizzes</Link></li>
         </ul>
         <div className="profile">
           <i className="fas fa-bell"></i>

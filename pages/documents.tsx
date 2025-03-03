@@ -1,7 +1,7 @@
 // pages/documents.tsx
 import Head from 'next/head';
 import Link from 'next/link'; // Import Link from next/link
-import '../styles/styles.css'; // Import the relevant CSS
+import '../styles/document.css'; // Import the relevant CSS
 
 export default function Documents() {
   return (
